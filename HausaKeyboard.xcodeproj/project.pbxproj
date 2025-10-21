@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED6E36792EA6E0680017A6D2 /* HausaKeyboardExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ED6E36722EA6E0650017A6D2 /* HausaKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ED6E36522EA6D59C0017A6D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +25,45 @@
 			remoteGlobalIDString = ED6E36402EA6D5970017A6D2;
 			remoteInfo = HausaKeyboard;
 		};
+		ED6E36772EA6E0680017A6D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED6E36392EA6D5970017A6D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6E36712EA6E0650017A6D2;
+			remoteInfo = HausaKeyboardExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED6E367E2EA6E0680017A6D2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED6E36792EA6E0680017A6D2 /* HausaKeyboardExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED6E36412EA6D5970017A6D2 /* HausaKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HausaKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6E36512EA6D59C0017A6D2 /* HausaKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HausaKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6E365B2EA6D59C0017A6D2 /* HausaKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HausaKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6E36722EA6E0650017A6D2 /* HausaKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HausaKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ED6E367A2EA6E0680017A6D2 /* Exceptions for "HausaKeyboardExtension" folder in "HausaKeyboardExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ED6E36712EA6E0650017A6D2 /* HausaKeyboardExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		ED6E36432EA6D5970017A6D2 /* HausaKeyboard */ = {
@@ -43,6 +79,14 @@
 		ED6E365E2EA6D59C0017A6D2 /* HausaKeyboardUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HausaKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		ED6E36732EA6E0660017A6D2 /* HausaKeyboardExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ED6E367A2EA6E0680017A6D2 /* Exceptions for "HausaKeyboardExtension" folder in "HausaKeyboardExtension" target */,
+			);
+			path = HausaKeyboardExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6E366F2EA6E0650017A6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +129,7 @@
 				ED6E36432EA6D5970017A6D2 /* HausaKeyboard */,
 				ED6E36542EA6D59C0017A6D2 /* HausaKeyboardTests */,
 				ED6E365E2EA6D59C0017A6D2 /* HausaKeyboardUITests */,
+				ED6E36732EA6E0660017A6D2 /* HausaKeyboardExtension */,
 				ED6E36422EA6D5970017A6D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +140,7 @@
 				ED6E36412EA6D5970017A6D2 /* HausaKeyboard.app */,
 				ED6E36512EA6D59C0017A6D2 /* HausaKeyboardTests.xctest */,
 				ED6E365B2EA6D59C0017A6D2 /* HausaKeyboardUITests.xctest */,
+				ED6E36722EA6E0650017A6D2 /* HausaKeyboardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +155,12 @@
 				ED6E363D2EA6D5970017A6D2 /* Sources */,
 				ED6E363E2EA6D5970017A6D2 /* Frameworks */,
 				ED6E363F2EA6D5970017A6D2 /* Resources */,
+				ED6E367E2EA6E0680017A6D2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED6E36782EA6E0680017A6D2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				ED6E36432EA6D5970017A6D2 /* HausaKeyboard */,
@@ -163,6 +218,28 @@
 			productReference = ED6E365B2EA6D59C0017A6D2 /* HausaKeyboardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ED6E36712EA6E0650017A6D2 /* HausaKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6E367B2EA6E0680017A6D2 /* Build configuration list for PBXNativeTarget "HausaKeyboardExtension" */;
+			buildPhases = (
+				ED6E366E2EA6E0650017A6D2 /* Sources */,
+				ED6E366F2EA6E0650017A6D2 /* Frameworks */,
+				ED6E36702EA6E0650017A6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ED6E36732EA6E0660017A6D2 /* HausaKeyboardExtension */,
+			);
+			name = HausaKeyboardExtension;
+			packageProductDependencies = (
+			);
+			productName = HausaKeyboardExtension;
+			productReference = ED6E36722EA6E0650017A6D2 /* HausaKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +261,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = ED6E36402EA6D5970017A6D2;
 					};
+					ED6E36712EA6E0650017A6D2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = ED6E363C2EA6D5970017A6D2 /* Build configuration list for PBXProject "HausaKeyboard" */;
@@ -203,6 +283,7 @@
 				ED6E36402EA6D5970017A6D2 /* HausaKeyboard */,
 				ED6E36502EA6D59C0017A6D2 /* HausaKeyboardTests */,
 				ED6E365A2EA6D59C0017A6D2 /* HausaKeyboardUITests */,
+				ED6E36712EA6E0650017A6D2 /* HausaKeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +304,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ED6E36592EA6D59C0017A6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6E36702EA6E0650017A6D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +341,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6E366E2EA6E0650017A6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +360,11 @@
 			isa = PBXTargetDependency;
 			target = ED6E36402EA6D5970017A6D2 /* HausaKeyboard */;
 			targetProxy = ED6E365C2EA6D59C0017A6D2 /* PBXContainerItemProxy */;
+		};
+		ED6E36782EA6E0680017A6D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6E36712EA6E0650017A6D2 /* HausaKeyboardExtension */;
+			targetProxy = ED6E36772EA6E0680017A6D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +618,56 @@
 			};
 			name = Release;
 		};
+		ED6E367C2EA6E0680017A6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9SB8J96X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HausaKeyboardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HausaKeyboardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DuniyarHausawa.HausaKeyboard.HausaKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6E367D2EA6E0680017A6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9SB8J96X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HausaKeyboardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HausaKeyboardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DuniyarHausawa.HausaKeyboard.HausaKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +703,15 @@
 			buildConfigurations = (
 				ED6E366C2EA6D59C0017A6D2 /* Debug */,
 				ED6E366D2EA6D59C0017A6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6E367B2EA6E0680017A6D2 /* Build configuration list for PBXNativeTarget "HausaKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6E367C2EA6E0680017A6D2 /* Debug */,
+				ED6E367D2EA6E0680017A6D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
