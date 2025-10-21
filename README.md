@@ -1,6 +1,6 @@
 # Hausa Keyboard for iOS
 
-A custom iOS keyboard extension that makes it easy to type Hausa language with special characters.
+A custom iOS keyboard extension that makes it easy to type Hausa text with special characters.
 
 ## Features
 
