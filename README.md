@@ -12,8 +12,9 @@ A custom iOS keyboard extension that makes it easy to type Hausa text with speci
 - ✅ Works on iOS 15.0+
 
 ## Screenshots
-
-_Coming soon_
+![App Home](Screenshots/app-home.png)
+![In Use](Screenshots/keyboard-in-use.png) 
+![Keyboards](Screenshots/keyboards.png)
 
 ## Installation
 
